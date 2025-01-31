@@ -43,7 +43,6 @@ interface month {
 
 @Component({
     selector: 'app-sales-profit',
-    standalone: true,
     imports: [MaterialModule, TablerIconsModule, NgApexchartsModule, MatButtonModule, CommonModule],
     templateUrl: './sales-profit.component.html',
 })
@@ -52,9 +51,9 @@ export class AppSalesProfitComponent {
     public salesprofitChart!: Partial<salesprofitChart> | any;
 
     months: month[] = [
-        { value: 'mar', viewValue: 'Sep 2024' },
-        { value: 'apr', viewValue: 'Oct 2024' },
-        { value: 'june', viewValue: 'Nov 2024' },
+        { value: 'mar', viewValue: 'Sep 2025' },
+        { value: 'apr', viewValue: 'Oct 2025' },
+        { value: 'june', viewValue: 'Nov 2025' },
     ];
 
     constructor() {

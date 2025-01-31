@@ -9,7 +9,6 @@ import { AppEarningReportsComponent } from 'src/app/components/earning-reports/e
 
 @Component({
   selector: 'app-starter',
-  standalone: true,
   imports: [
     MaterialModule,
     AppBlogCardsComponent,
@@ -20,7 +19,6 @@ import { AppEarningReportsComponent } from 'src/app/components/earning-reports/e
     AppEarningReportsComponent
   ],
   templateUrl: './starter.component.html',
-  styleUrls: ['./starter.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class StarterComponent {}
+export class StarterComponent { }

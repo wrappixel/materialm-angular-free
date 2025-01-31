@@ -1,0 +1,33 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+@include mat.table-overrides(
+  (
+    background-color: var(--mdc-elevated-card-container-color),
+    header-headline-color: var(--mat-sys-on-background),
+    row-item-label-text-color: var(--mat-sys-on-background),
+  )
+);
+
+html {
+  .mdc-data-table__cell,
+  .mdc-data-table__header-cell {
+    padding: 16px 24px;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+
+    td,
+    mat-cell {
+      white-space: nowrap;
+      padding: 16px 24px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .table-xs-responsive {
+    overflow-x: auto;
+  }
+}

@@ -13,7 +13,6 @@ interface stats {
 
 @Component({
     selector: 'app-earning-reports',
-    standalone: true,
     imports: [MaterialModule, TablerIconsModule],
     templateUrl: './earning-reports.component.html',
 })
@@ -37,7 +36,7 @@ export class AppEarningReportsComponent {
         },
         {
             id: 3,
-            color: 'accent',
+            color: 'secondary',
             title: 'Bank Transfer',
             subtitle: 'and +4 more',
             icon: 'solar:course-up-line-duotone',

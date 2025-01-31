@@ -35,7 +35,6 @@ export interface totalfollowersChart {
 
 @Component({
     selector: 'app-total-followers',
-    standalone: true,
     imports: [MaterialModule, NgApexchartsModule, MatButtonModule, TablerIconsModule],
     templateUrl: './total-followers.component.html',
 })

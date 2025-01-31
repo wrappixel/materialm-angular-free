@@ -17,14 +17,16 @@
   }
 }
 
+@media (min-width: 960px) {
+  .d-md-none {
+    display: none !important;
+  }
+}
+
 @media (min-width: 768px) {
   body {
     .d-sm-flex {
       display: flex !important;
-    }
-
-    .mt-lg-0 {
-      margin-top: 0 !important;
     }
   }
 }
@@ -35,16 +37,22 @@
   }
 }
 
-@media (max-width: 599px) {
-  .mt-xs-12 {
-    margin-top: 12px !important;
-  }
-}
-
 .flex-shrink-0 {
   flex-shrink: 0;
 }
 
 .flex-1-auto {
   flex: 1 1 0%;
+}
+
+.hstack {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .hstack {
+    flex-direction: column;
+  }
 }

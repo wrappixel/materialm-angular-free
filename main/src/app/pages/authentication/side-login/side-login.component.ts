@@ -1,25 +1,14 @@
 import { Component } from '@angular/core';
-import {
-  FormGroup,
-  FormControl,
-  Validators,
-  FormsModule,
-  ReactiveFormsModule,
-} from '@angular/forms';
-import { Router, RouterModule } from '@angular/router';
-import { MaterialModule } from '../../../material.module';
-import { MatButtonModule } from '@angular/material/button';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { RouterModule } from '@angular/router';
+import { MaterialModule } from 'src/app/material.module';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-side-login',
-  standalone: true,
-  imports: [
-    RouterModule,
-    MaterialModule,
-    FormsModule,
-    ReactiveFormsModule,
-    MatButtonModule,
-  ],
+  imports: [RouterModule, MaterialModule, FormsModule, ReactiveFormsModule],
   templateUrl: './side-login.component.html',
 })
 export class AppSideLoginComponent {
@@ -35,7 +24,6 @@ export class AppSideLoginComponent {
   }
 
   submit() {
-    // console.log(this.form.value);
-    this.router.navigate(['/']);
+    this.router.navigate(['']);
   }
 }

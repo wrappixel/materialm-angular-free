@@ -1,22 +1,22 @@
 <mat-card class="cardWithShadow">
     <mat-card-content>
-        <div class="d-flex justify-content-between align-items-center m-b-16">
+        <div class="d-flex justify-content-between align-items-center m-b-8">
             <mat-card-title class="m-b-0 f-s-18">Earning Reports</mat-card-title>
             <div>
-                <button class="custom-mdc-button" mat-button [matMenuTriggerFor]="menu">
-                    <i-tabler name="dots-vertical" class="icon-20"></i-tabler>
+                <button class="custom-mdc-button" mat-icon-button [matMenuTriggerFor]="menu">
+                    <mat-icon>more_vert</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu" xPosition="before">
                     <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 gap-8">
                         <span>Action</span>
                     </a>
                     <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 gap-8">
                         <span>Another action</span>
                     </a>
                     <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 gap-8">
                         <span>Something else here</span>
                     </a>
                 </mat-menu>
@@ -32,15 +32,15 @@
                         <i class="iconify f-s-24" [attr.data-icon]="stat.icon"></i>
                     </span>
                     <div>
-                        <h6 class="mat-subtitle-1 f-s-14 lh-sm">{{ stat.title }}</h6>
-                        <p class="mat-body-1 f-s-12 f-w-500 d-flex align-items-center gap-4">
+                        <h6 class="f-s-14 lh-sm">{{ stat.title }}</h6>
+                        <p class="f-s-12 m-y-0 f-w-500 d-flex align-items-center gap-4">
                             {{ stat.subtitle }}
                             <i class="iconify" data-icon="solar:info-circle-linear"></i>
                         </p>
                     </div>
                 </div>
                 <span
-                    class="bg-light-success text-success f-s-12 f-w-500 p-x-10 p-y-4 rounded-pill d-flex align-content-center gap-4">
+                    class="bg-light-success text-success f-s-12 f-w-500 p-x-10 p-y-4 rounded-pill d-flex align-items-center gap-4">
                     <i class="iconify f-s-12" data-icon="solar:alt-arrow-up-bold"></i>
                     {{ stat.badge }}
                 </span>

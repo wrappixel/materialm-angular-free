@@ -1,28 +1,27 @@
+@use "../variables" as *;
+
 html .topbar {
-  background-color: $toolbar;
   position: sticky;
   top: 0;
   z-index: 9;
   height: $header-height;
-  gap: 6px;
+  background-color: var(--mat-sys-background);
+
+  i-tabler {
+    stroke-width: 1.5px;
+  }
 }
 
 .topbar-dd {
   min-width: 200px !important;
 }
 
-.object-cover {
-  object-fit: cover;
+.text-hover-primary:hover {
+  .hover-text {
+    color: $primary;
+  }
 }
 
-.profile-btn-dd {
-  padding: 0 10px !important;
-
-  &.mat-mdc-fab .mat-mdc-button-persistent-ripple::before {
-    display: none;
-  }
-
-  &.mat-mdc-fab {
-    background-color: transparent;
-  }
+.object-cover {
+  object-fit: cover;
 }

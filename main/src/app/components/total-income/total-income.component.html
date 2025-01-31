@@ -1,28 +1,28 @@
-<mat-card class="shadow-none bg-light-accent">
+<mat-card class="shadow-none bg-light-secondary">
     <mat-card-content>
         <div class="d-flex justify-content-between align-items-center m-b-20 p-b-2">
             <div class="d-flex align-items-center gap-12">
                 <div
-                    class="bg-accent rounded-circle-shape p-x-16 p-y-8 rounded-pill d-flex align-items-center justify-content-center">
+                    class="bg-secondary rounded-circle-shape p-x-16 p-y-8 rounded-pill d-flex align-items-center justify-content-center">
                     <i class="iconify f-s-24 text-white" data-icon="solar:wallet-2-line-duotone"></i>
                 </div>
                 <mat-card-title class="m-b-0 f-s-16 f-w-500 text-muted">Total Income</mat-card-title>
             </div>
             <div>
-                <button class="custom-mdc-button" mat-button [matMenuTriggerFor]="menu">
-                    <i-tabler name="dots-vertical" class="icon-20"></i-tabler>
+                <button class="custom-mdc-button" mat-icon-button [matMenuTriggerFor]="menu">
+                    <mat-icon>more_vert</mat-icon>
                 </button>
                 <mat-menu #menu="matMenu" xPosition="before">
                     <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 gap-8">
                         <span>Action</span>
                     </a>
                     <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 gap-8">
                         <span>Another action</span>
                     </a>
                     <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 gap-8">
                         <span>Something else here</span>
                     </a>
                 </mat-menu>
@@ -30,8 +30,8 @@
         </div>
         <div class="row align-items-center justify-content-between p-t-24">
             <div class="col-6">
-                <h2 class="mat-subtitle-1 f-s-30 lh-lg m-b-12">$6,280</h2>
-                <span class="f-s-12 f-w-600 p-x-10 p-y-4 rounded-pill border-muted text-muted">+18% last month</span>
+                <h2 class="f-s-30 lh-lg m-b-12">$6,280</h2>
+                <span class="f-s-12 f-w-600 p-x-10 p-y-4 rounded-pill border-secondary text-secondary">+18% last month</span>
             </div>
             <div class="col-5">
                 <apx-chart [series]="totalincomeChart.series" [chart]="totalincomeChart.chart"

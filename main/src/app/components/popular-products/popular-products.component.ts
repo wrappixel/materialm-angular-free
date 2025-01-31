@@ -26,7 +26,7 @@ const ELEMENT_DATA: productsData[] = [
         price: '$180',
         paid: 'Partially paid',
         status: 'Confirmed',
-        progress: 'accent',
+        progress: 'primary',
     },
     {
         id: 2,
@@ -35,7 +35,7 @@ const ELEMENT_DATA: productsData[] = [
         price: '$120',
         paid: 'Full paid',
         status: 'Confirmed',
-        progress: 'success',
+        progress: 'secondary',
     },
     {
         id: 3,
@@ -53,12 +53,11 @@ const ELEMENT_DATA: productsData[] = [
         price: '$120',
         paid: 'Partially paid',
         status: 'Confirmed',
-        progress: 'accent',
+        progress: 'primary',
     },
 ];
 @Component({
     selector: 'app-popular-products',
-    standalone: true,
     imports: [
         MaterialModule,
         MatMenuModule,

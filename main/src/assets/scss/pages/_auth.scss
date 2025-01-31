@@ -1,3 +1,5 @@
+@use "../variables" as *;
+
 .blank-layout-container {
   height: 100vh;
   display: flex;
@@ -18,6 +20,7 @@
   &.row {
     margin-right: -8px;
     margin-left: -8px;
+
     .col-2,
     .col-12 {
       padding-right: 8px;
@@ -29,6 +32,7 @@
 .or-border {
   position: relative;
   text-align: center;
+
   &:before {
     content: "";
     position: absolute;
@@ -38,6 +42,7 @@
     height: 1px;
     background: $borderColor;
   }
+
   &:after {
     content: "";
     position: absolute;
@@ -60,10 +65,10 @@
 }
 
 .mat-mdc-form-field.mat-form-field-invalid {
+
   .mdc-notched-outline__leading,
   .mdc-notched-outline__notch,
   .mdc-notched-outline__trailing {
     border-color: $error !important;
   }
 }
-

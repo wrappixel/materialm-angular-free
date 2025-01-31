@@ -1,6 +1,6 @@
 {
-  "name": "matdash",
-  "version": "1.0.0",
+  "name": "materialM",
+  "version": "3.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,33 +10,34 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^18.0.3",
-    "@angular/cdk": "^18.0.3",
-    "@angular/common": "^18.0.3",
-    "@angular/compiler": "^18.0.3",
-    "@angular/core": "^18.0.3",
-    "@angular/forms": "^18.0.3",
-    "@angular/material": "^18.0.3",
-    "@angular/platform-browser": "^18.0.3",
-    "@angular/platform-browser-dynamic": "^18.0.3",
-    "@angular/router": "^18.0.3",
+    "@angular/animations": "^19.0.5",
+    "@angular/cdk": "^19.0.4",
+    "@angular/common": "^19.0.5",
+    "@angular/compiler": "^19.0.5",
+    "@angular/core": "^19.0.5",
+    "@angular/forms": "^19.0.5",
+    "@angular/material": "^19.0.4",
+    "@angular/platform-browser": "^19.0.5",
+    "@angular/platform-browser-dynamic": "^19.0.5",
+    "@angular/router": "^19.0.5",
     "@ng-matero/extensions": "^17.0.0",
     "@ngx-translate/core": "^14.0.0",
     "@ngx-translate/http-loader": "^7.0.0",
     "angular-tabler-icons": "^2.7.0",
-    "apexcharts": "^3.52.0",
+    "apexcharts": "^3.40.0",
     "iconify": "^1.4.0",
     "ng-apexcharts": "^1.7.6",
     "ngx-scrollbar": "^11.0.0",
     "rxjs": "~7.5.0",
     "sass": "^1.57.1",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^18.0.4",
-    "@angular/cli": "~18.0.4",
-    "@angular/compiler-cli": "^18.0.3",
+    "@angular-devkit/build-angular": "^19.0.6",
+    "@angular/cli": "~19.0.6",
+    "@angular/compiler-cli": "^19.0.5",
+    "@types/chance": "^1.1.6",
     "@types/date-fns": "^2.6.0",
     "@types/jasmine": "~4.3.0",
     "jasmine-core": "~4.5.0",
@@ -45,6 +46,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~5.4.5"
+    "typescript": "~5.6.3"
   }
 }

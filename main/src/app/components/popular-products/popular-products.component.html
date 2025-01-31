@@ -1,85 +1,85 @@
 <mat-card class="cardWithShadow overflow-hidden">
-<mat-card-content>
-    <mat-card-title class="m-b-4">Popular Products</mat-card-title>
-    <mat-card-subtitle class="mat-mdc-card-subtitle">Total 9k Visitors</mat-card-subtitle>
-</mat-card-content>
-<div class="table-responsive">
-    <table mat-table [dataSource]="dataSource" class="w-100">
-        <!-- Profile Column -->
-        <ng-container matColumnDef="products">
-            <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
-                Products
-            </th>
-            <td mat-cell *matCellDef="let element">
-                <div class="d-flex align-items-center">
-                    <img [src]="element.imagePath" alt="users" width="60" class="rounded-7" />
-                    <div class="m-l-16 product-title">
-                        <h6 class="mat-subtitle-1 text-truncate-2 f-s-14 lh-sm">
-                            {{ element.uname }}
-                        </h6>
+    <mat-card-content>
+        <mat-card-title class="m-b-4">Popular Products</mat-card-title>
+        <mat-card-subtitle class="mat-mdc-card-subtitle">Total 9k Visitors</mat-card-subtitle>
+    </mat-card-content>
+    <div class="table-responsive">
+        <table mat-table [dataSource]="dataSource" class="w-100">
+            <!-- Profile Column -->
+            <ng-container matColumnDef="products">
+                <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
+                    Products
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <div class="d-flex align-items-center">
+                        <img [src]="element.imagePath" alt="users" width="60" class="rounded-7" />
+                        <div class="m-l-16 product-title">
+                            <h6 class="mat-subtitle-1 text-truncate-2 f-s-14 lh-sm">
+                                {{ element.uname }}
+                            </h6>
+                        </div>
                     </div>
-                </div>
-            </td>
-        </ng-container>
+                </td>
+            </ng-container>
 
-        <!-- Hour Rate Column -->
-        <ng-container matColumnDef="payment">
-            <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
-                Payment
-            </th>
-            <td mat-cell *matCellDef="let element">
-                <h6 class="mat-subtitle-1 f-s-16">{{ element.price }} <span class="text-muted">/499</span></h6>
-                <p class="text-muted m-b-8 f-s-14 m-t-0">{{ element.paid }}</p>
-                <mat-progress-bar mode="determinate" color="{{ element.progress }}" value="40"></mat-progress-bar>
-            </td>
-        </ng-container>
+            <!-- Hour Rate Column -->
+            <ng-container matColumnDef="payment">
+                <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
+                    Payment
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <h6 class="mat-subtitle-1 f-s-16">{{ element.price }} <span class="text-muted">/499</span></h6>
+                    <p class="text-muted m-b-8 f-s-14 m-t-0">{{ element.paid }}</p>
+                    <mat-progress-bar mode="determinate" color="{{ element.progress }}" value="40"></mat-progress-bar>
+                </td>
+            </ng-container>
 
-        <!-- Symbol Column -->
-        <ng-container matColumnDef="status">
-            <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
-                Status
-            </th>
-            <td mat-cell *matCellDef="let element">
-                <span class="bg-light-{{ element.progress }} text-{{
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="status">
+                <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
+                    Status
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <span class="bg-light-{{ element.progress }} text-{{
                   element.progress
                 }} f-s-12 f-w-500 p-x-10 p-y-4 rounded-pill">
-                    {{ element.status | titlecase }}
-                </span>
-            </td>
-        </ng-container>
+                        {{ element.status | titlecase }}
+                    </span>
+                </td>
+            </ng-container>
 
-        <!-- Weight Column -->
-        <ng-container matColumnDef="menu">
-            <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
+            <!-- Weight Column -->
+            <ng-container matColumnDef="menu">
+                <th mat-header-cell *matHeaderCellDef class="mat-subtitle-1 f-s-14">
 
-            </th>
-            <td mat-cell *matCellDef="let element">
-                <button mat-icon-button [matMenuTriggerFor]="menu"
-                    aria-label="Example icon button with a vertical three dot icon">
-                    <mat-icon>more_vert</mat-icon>
-                </button>
-                <mat-menu #menu="matMenu" xPosition="before">
-                    <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
-                        <i-tabler name="plus" class="icon-18"></i-tabler>
-                        <span>Add</span>
-                    </a>
-                    <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
-                        <i-tabler name="edit" class="icon-18"></i-tabler>
-                        <span>Edit</span>
-                    </a>
-                    <a href="javascript:void(0)"
-                        class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
-                        <i-tabler name="trash" class="icon-18"></i-tabler>
-                        <span>Delete</span>
-                    </a>
-                </mat-menu>
-            </td>
-        </ng-container>
+                </th>
+                <td mat-cell *matCellDef="let element">
+                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                        aria-label="Example icon button with a vertical three dot icon">
+                        <mat-icon>more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu" xPosition="before">
+                        <a href="javascript:void(0)"
+                            class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                            <i-tabler name="plus" class="icon-18"></i-tabler>
+                            <span>Add</span>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                            <i-tabler name="edit" class="icon-18"></i-tabler>
+                            <span>Edit</span>
+                        </a>
+                        <a href="javascript:void(0)"
+                            class="d-flex align-items-center text-decoration-none p-y-10 p-x-16 mat-body-1 gap-8">
+                            <i-tabler name="trash" class="icon-18"></i-tabler>
+                            <span>Delete</span>
+                        </a>
+                    </mat-menu>
+                </td>
+            </ng-container>
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    </table>
-</div>
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+        </table>
+    </div>
 </mat-card>
