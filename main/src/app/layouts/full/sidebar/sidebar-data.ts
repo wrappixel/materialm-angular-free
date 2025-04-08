@@ -145,8 +145,7 @@ export const navItems: NavItem[] = [
     iconName: 'solar:bill-list-line-duotone',
     route: '',
     chip: true,
-    chipClass: 'bg-light-secondary text-secondary',
-    chipContent: 'PRO',
+    
     children: [
       {
         displayName: 'List',
@@ -191,8 +190,7 @@ export const navItems: NavItem[] = [
     iconName: 'solar:widget-4-line-duotone',
     route: 'apps/blog',
     chip: true,
-    chipClass: 'bg-light-secondary text-secondary',
-    chipContent: 'PRO',
+    
     children: [
       {
         displayName: 'Post',
@@ -437,8 +435,7 @@ export const navItems: NavItem[] = [
     iconName: 'solar:widget-2-line-duotone',
     route: 'widgets',
     chip: true,
-    chipClass: 'bg-light-secondary text-secondary',
-    chipContent: 'PRO',
+    
     children: [
       {
         displayName: 'Cards',
@@ -497,8 +494,7 @@ export const navItems: NavItem[] = [
     iconName: 'solar:password-minimalistic-input-line-duotone',
     route: 'forms/forms-elements',
     chip: true,
-    chipClass: 'bg-light-secondary text-secondary',
-    chipContent: 'PRO',
+    
     children: [
       {
         displayName: 'Autocomplete',
@@ -607,8 +603,7 @@ export const navItems: NavItem[] = [
     iconName: 'solar:tablet-line-duotone',
     route: 'tables',
     chip: true,
-    chipClass: 'bg-light-secondary text-secondary',
-    chipContent: 'PRO',
+    
     children: [
       {
         displayName: 'Basic Table',
@@ -885,8 +880,7 @@ export const navItems: NavItem[] = [
     iconName: 'solar:password-outline',
     route: '/authentication',
     chip: true,
-    chipClass: 'bg-light-secondary text-secondary',
-    chipContent: 'PRO',
+    
     children: [
       {
         displayName: 'Side Forgot Pwd',
@@ -915,8 +909,7 @@ export const navItems: NavItem[] = [
     iconName: 'solar:siderbar-line-duotone',
     route: '/authentication',
     chip: true,
-    chipClass: 'bg-light-secondary text-secondary',
-    chipContent: 'PRO',
+    
     children: [
       {
         displayName: 'Side Two Steps',
