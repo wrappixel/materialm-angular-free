@@ -8,7 +8,7 @@ import { filter } from 'rxjs/operators';
 import { NavigationEnd, Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from 'src/app/material.module';
-import { CommonModule } from '@angular/common';
+
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { TablerIconsModule } from 'angular-tabler-icons';
 import { HeaderComponent } from './header/header.component';
@@ -27,13 +27,12 @@ const TABLET_VIEW = 'screen and (min-width: 769px) and (max-width: 1024px)';
     RouterModule,
     AppNavItemComponent,
     MaterialModule,
-    CommonModule,
     SidebarComponent,
     NgScrollbarModule,
     TablerIconsModule,
     HeaderComponent,
     AppTopstripComponent
-  ],
+],
   templateUrl: './full.component.html',
   styleUrls: [],
   encapsulation: ViewEncapsulation.None,

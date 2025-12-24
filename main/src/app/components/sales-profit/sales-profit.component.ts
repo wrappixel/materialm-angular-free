@@ -18,7 +18,7 @@ import {
     ApexYAxis,
 } from 'ng-apexcharts';
 import { MatButtonModule } from '@angular/material/button';
-import { CommonModule } from '@angular/common';
+
 
 export interface salesprofitChart {
     series: ApexAxisChartSeries;
@@ -43,7 +43,7 @@ interface month {
 
 @Component({
     selector: 'app-sales-profit',
-    imports: [MaterialModule, TablerIconsModule, NgApexchartsModule, MatButtonModule, CommonModule],
+    imports: [MaterialModule, TablerIconsModule, NgApexchartsModule, MatButtonModule],
     templateUrl: './sales-profit.component.html',
 })
 export class AppSalesProfitComponent {
